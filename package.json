@@ -1,13 +1,13 @@
 {
-  "name": "11ty-landing-page",
-  "version": "0.0.1",
-  "description": "A simple landing page built with 11ty and Tailwind CSS",
+  "name": "remote-rift-website",
+  "version": "0.1.0",
+  "description": "Landing page for Remote Rift - an app that connects to League of Legends from your phone.",
   "scripts": {
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "deploy": "eleventy",
     "deploy-pgs": "ELEVENTY_ENV=pages eleventy"
   },
-  "author": "ttntm",
+  "author": "Tomasz Wyrowiński",
   "license": "MIT",
   "type": "module",
   "devDependencies": {

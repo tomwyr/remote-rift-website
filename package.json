@@ -4,8 +4,8 @@
   "description": "Landing page for Remote Rift - an app that connects to League of Legends from your phone.",
   "scripts": {
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
-    "deploy": "eleventy",
-    "deploy-pgs": "ELEVENTY_ENV=pages eleventy"
+    "build": "eleventy",
+    "build-pages": "ELEVENTY_ENV=pages eleventy"
   },
   "author": "Tomasz Wyrowiński",
   "license": "MIT",

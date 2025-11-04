@@ -2,12 +2,11 @@ import htmlmin from 'html-minifier'
 import markdownIt from 'markdown-it'
 import { EleventyHtmlBasePlugin } from '@11ty/eleventy'
 
-const isPages = process.env.ELEVENTY_ENV === 'pages'
 const isProdDeployment = Boolean(
   process.env.ELEVENTY_RUN_MODE
   && process.env.ELEVENTY_RUN_MODE === 'build'
 )
-const outDir = isPages ? 'docs' : 'public'
+const outDir = 'public'
 
 export default async function(config) {
   config.addPlugin(EleventyHtmlBasePlugin)

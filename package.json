@@ -1,7 +1,7 @@
 {
   "name": "remote-rift-website",
   "version": "0.1.0",
-  "description": "Landing page for Remote Rift - an app that connects to League of Legends from your phone.",
+  "description": "Landing page for Remote Rift - an application that connects to League of Legends from your phone.",
   "scripts": {
     "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "build": "eleventy",

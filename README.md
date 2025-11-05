@@ -1,57 +1,32 @@
-# 11ty-landing-page
+# Remote Rift Website
 
-A simple landing page built with 11ty and Tailwind CSS.
+Landing page for **Remote Rift**, an application that connects to League of Legends from your phone.
 
-**Other versions**
+Visit the current version of the website at https://tomwyr.github.io/remote-rift-website.
 
-- [Astro](https://github.com/ttntm/astro-landing-page)
-- [Hugo](https://github.com/ttntm/hugo-landing-page)
+## Development
 
-## How to use this template
+The project uses **11ty (Eleventy)**, a popular static site generator. For more information, visit [11ty.dev](https://www.11ty.dev/).
 
-**Requirements:**
+To run the project locally:
 
-1. Eleventy (developed and tested with version 0.12.1)
-2. Tailwind CSS
+1. Ensure Node.js is installed.
+2. Run `npm install`.
+3. Run `npm run serve`.
+4. Open your browser at `http://localhost:8080`.
 
-All other dependencies are either linked from a CDN or included in this repository.
+To modify the website content, edit the templates and data located under the `src` directory.  
+After saving changes, 11ty automatically reloads the site to reflect the updates.
 
-**Setup:**
+## Deployment
 
-1. Fork, clone or download
-2. `cd` into the root folder
-3. run `npm install`
-4. run `npm run serve`
-5. open a browser and go to `http://localhost:8080`
+Deployment is handled via a GitHub Actions workflow that builds the static site and publishes it to GitHub Pages.  
+See the workflow file: [.github/workflows/deploy_website.yml](.github/workflows/deploy_website.yml).
 
-**Basic configuration:**
+To release a new version, push changes to the `master` branch or [manually trigger the workflow](https://github.com/tomwyr/remote-rift-website/actions/workflows/deploy_website.yml) from GitHub.
 
-1. Eleventy -> `./.eleventy.js`
-2. Tailwind -> `./tailwind.config.js`
-3. Netlify -> `./netlify.toml`
+## Related Projects
 
-CSS is built via PostCSS and based on `./src/_includes/css/_page.css`. Building CSS gets triggered by `./src/css/page.11ty.js` and Tailwind's config is set to JIT (see: [Tailwind docs](https://tailwindcss.com/docs/just-in-time-mode))
-
-Please note that this CSS build _does not_ include the `normalize.css` file used for the 2 regular pages (imprint, privacy) - a minified production version is stored in `./src/static/css` and gets included in the build by default.
-
-**Change Content:**
-
-Page content is stored in
-
-- `./src/`
-  - `imprint.md`
-  - `privacy.md`
-- `./src/sections/`
-- `./src/_data/features.json`
-
-**Change Templates/Layout:**
-
-Page structure and templates are stored in `./src/_layouts/` and can be edited there.
-
-Best have a look at `./layouts/base.njk` first to understand how it all comes together - the page itself is constructed from partial templates stored in `./src/includes/` and each section has a corresponding template file (`section.**.njk`) stored there.
-
-`index.njk` in `./src/` arranges everything, meaning that sections can be added/re-ordered/removed/... there.
-
-**Change images:**
-
-Images are stored in `./static/img/`; everything in there can be considered a placeholder that should eventually be replaced with your actual production images.
+- [Remote Rift Connector](https://github.com/tomwyr/remote-rift-connector) — A service that connects to and communicates with the League Client API.
+- [Remote Rift Desktop](https://github.com/tomwyr/remote-rift-desktop) — A desktop wrapper that initiates the connector service to the League Client.
+- [Remote Rift Mobile](https://github.com/tomwyr/remote-rift-mobile) — A mobile application that allows users to interact with League of Legends remotely.

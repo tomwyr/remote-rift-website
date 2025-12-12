@@ -1,6 +1,6 @@
 # Remote Rift Website
 
-Landing page for **Remote Rift**, an application that connects to League of Legends from your phone.
+Landing page for **Remote Rift**, an application that lets you queue for League of Legends games from your phone.
 
 Visit the current version of the website at https://tomwyr.github.io/remote-rift-website.
 
@@ -27,6 +27,6 @@ To release a new version, push changes to the `master` branch or [manually trigg
 
 ## Related Projects
 
-- [Remote Rift Connector](https://github.com/tomwyr/remote-rift-connector) — A service that connects to and communicates with the League Client API.
-- [Remote Rift Desktop](https://github.com/tomwyr/remote-rift-desktop) — A desktop wrapper that initiates the connector service to the League Client.
-- [Remote Rift Mobile](https://github.com/tomwyr/remote-rift-mobile) — A mobile application that allows users to interact with League of Legends remotely.
+- [Remote Rift Connector](https://github.com/tomwyr/remote-rift-connector) — A local service that connects to and communicates with the League Client API.
+- [Remote Rift Desktop](https://github.com/tomwyr/remote-rift-desktop) — A desktop application that launches and manages the local connector service.
+- [Remote Rift Mobile](https://github.com/tomwyr/remote-rift-mobile) — A mobile application that allows interaction with the League Client remotely.
